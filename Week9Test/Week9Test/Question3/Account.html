@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+</head>
+<body>
+    <form action="" style="border:1px solid #ccc">
+        <div class="container">
+        <div class="top">
+         <center> <h1>Create Account</h1></center>
+         </div>
+          <hr>
+         <label for="FName"><b>First Name</b></label><br>
+         <input type="text" placeholder="Enter First Name" name="name" required>
+
+          <label for="LName"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" name="name" required><br>
+
+          <label for="email"><b>Email</b></label><br>
+          <input type="text" placeholder="Enter Email" name="email" required><br> 
+      
+          <label for="psw"><b>Password</b></label><br>
+          <input type="password" placeholder="Enter Password" name="psw" required><br>
+      
+          <label for="psw-repeat"><b>Confirm Password</b></label><br>
+          <input type="password" placeholder="Confirm Password" name="psw-repeat" required><br>
+            
+          <label>Gender: </label>
+          <input type="radio"/>Male
+          <input type="radio"/>Female
+            <br><br>
+          <label>Hobbies: </label>
+          <input type="Checkbox" /> Music
+          <input type="Checkbox" /> Sports
+          <input type="Checkbox" /> Travel
+          <input type="Checkbox" /> Movies  
+            <br><br>
+          <label>Source of Income</label>
+          <select>
+            <option>Employed</option>
+            <option>Business</option>
+           </select>
+           <br><br>
+           <label>Income</label>
+        <input type="range" min="1" max="100" value="50" class="slider">50<br><br>
+           <label>Bio</label><br>
+           <textarea rows="4" cols="50" placeholder="Enter about Yourself">
+        </textarea>
+        
+          <div class="submit">
+            <button type="submit" class="signupbtn">Create</button>
+          </div>
+        </div>
+      </form>
+</body>
+</html>

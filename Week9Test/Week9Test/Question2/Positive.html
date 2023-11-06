@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Validation.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Experience</title>
+    <center><b>Tell us something positive that happenend to you today</b></center>
+</head>
+<style>
+    /* Center the table */
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Align the headers to right of column */
+    th {
+        text-align: right;
+    }
+    /* Background color to light Grey */
+    body {
+        background-color: lightgray;
+    }
+    /* Submit button to blue with no borders */
+    .submit {
+        background-color: rgb(0, 204, 255);
+        /* Green */
+        border: none;
+        color: white;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+</style>
+<body>
+    <form  name="form" action="/FirstQ.html" onsubmit="return validate()">
+        <br>
+        <table class="center" cellpadding="7px">
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="name" placeholder="Enter your Name" /></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" placeholder="Enter your Email" /></td>
+            </tr>
+            <tr>
+                <th>On a Scale of 1-10,How good was it?</th>
+                <td><input type="text" name="good" placeholder="Enter a number between 1 to 10" /></td>
+            </tr>
+            <tr>
+                <th>Where did it happen?</th>
+                <td><select>
+                        <option>At Home</option>
+                        <option>At Office</option>
+                        <option>At College</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>At What time of day did it Happen?</th>
+                <td><input type="radio" /> Morning <br>
+                    <input type="radio" /> Afternoon <br>
+                    <input type="radio" /> Evening
+                </td>
+            </tr>
+            <tr>
+                <th>What Emotions did you Experience?<br>
+                    (Select all that Apply)</th>
+                <td><input type="Checkbox" /> Excited <br>
+                    <input type="Checkbox" /> Humble <br>
+                    <input type="Checkbox" /> Elated <br>
+                    <input type="Checkbox" /> Loved
+                </td>
+            </tr>
+            <tr>
+                <th>Please Describe your Positive Experience</th>
+                <td><textarea placeholder="Enter your Experience">
+        </textarea> </td>
+            </tr>
+        </table>
+        <center><button type="submit" class="submit">Submit</button></center>
+    </form>
+</body>
+</html>
