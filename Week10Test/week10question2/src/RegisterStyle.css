@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    background-color:white;
+    width: 30%;
+    padding: 20px;
+    height: 550px;
+    margin: 50px;
+    border-radius: 10px;
+  }
+  
+  .parent:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .log {
+    padding: 5px 7px;
+    margin: 4px 0;
+    border: 1px solid gray;
+    cursor: pointer;
+    width: 80%;
+    border: 0;
+    border-bottom: 2px solid gray;
+  }
+  
+  .login {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solidblack;
+    border-radius: 22px;
+    cursor: pointer;
+    width: 90%;
+  }
+  
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .body1 {
+    background-image: linear-gradient(to right, red, blue);
+    text-align: center;
+  }
+  
+  .center {
+    border-color: white;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
